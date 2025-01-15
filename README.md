@@ -40,17 +40,29 @@ Posts are displayed sequentially, simulating a timeline or feed feature.
 
 Complete List of Features:
 ✔ Add Friends
+
 ✔ Search / Find Friends
+
 ✔ Delete Friends
+
 ✔ Display Mutual Friends
+
 ✔ Suggest Potential Friends Based on Common Connections + attributes
+
 ✔ User Posting System ( Add , Edit , Delete)
+
 ✔ Setup Security Question
+
 ✔ Direct Messaging
+
 ✔ Visualize Network
+
 ✔ Admin Dashboard
+
 ✔ Badges , Achievements
+
 ✔ User Profile Avators
+
 ✔ Update Profile
 
 ![login](https://github.com/user-attachments/assets/08a04005-54ec-42f7-b917-71ed0bc515a1)
