@@ -53,8 +53,9 @@ This mimics the **friend suggestion features** of popular social media platforms
 ## 🛠️ Setup Guide
 
 ### 1. Prerequisites
-- **Java Development Kit (JDK)**: Ensure JDK 23+ is installed.
+- **Java Development Kit (JDK)**: Ensure JDK 21+ is installed.
 - **MariaDB Database**: Ensure MariaDB is installed and running.
+- **MYSQL Database**:  Ensure Mysql/PhpMyAdmin is installed and running as alternative for MariaDB.
 - **JavaFX**: Integrated with Zulu JDK or added separately.
 - **IDE**: Use IntelliJ IDEA, Eclipse, or your preferred IDE with Maven support.
 
