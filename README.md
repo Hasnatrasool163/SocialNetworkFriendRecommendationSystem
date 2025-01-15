@@ -38,17 +38,21 @@ Users can make posts, which are stored in First-Come, First-Served (FCFS) order.
 
 Posts are displayed sequentially, simulating a timeline or feed feature.
 
-🌟 Why Choose This Project?
+Complete List of Features:
+✔ Add Friends
+✔ Search / Find Friends
+✔ Delete Friends
+✔ Display Mutual Friends
+✔ Suggest Potential Friends Based on Common Connections + attributes
+✔ User Posting System ( Add , Edit , Delete)
+✔ Setup Security Question
+✔ Direct Messaging
+✔ Visualize Network
+✔ Admin Dashboard
+✔ Badges , Achievements
+✔ User Profile Avators
+✔ Update Profile
 
-Hands-On Graph Theory: Practical application of graph traversal algorithms.
-
-Real-World Relevance: Simulates functionality used by major social media platforms.
-
-Interactive Features: Engages users with dynamic interactions and personalized recommendations.
-
-Scalable Design: Can be expanded to include more advanced features like community detection, trending topics, and more.
-
-Build your own Social Network Friend Recommendation System and dive into the world of graph theory, algorithms, and real-world problem-solving! 🚀
 ![login](https://github.com/user-attachments/assets/08a04005-54ec-42f7-b917-71ed0bc515a1)
 ![Profile](https://github.com/user-attachments/assets/320187b3-d29e-40d2-965a-997185d83e44)
 ![DashboardPage](https://github.com/user-attachments/assets/5cf3989b-4808-452d-afc3-476860c5cd3b)
