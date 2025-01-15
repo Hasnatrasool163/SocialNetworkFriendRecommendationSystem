@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="355.0" prefWidth="600.0" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.SetupSecurityQuestionsController">
+    <children>
+        <Label layoutX="180.0" layoutY="18.0" styleClass="title" text="Setup Security Questions" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="100.0" styleClass="label-white" text="Question1:" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="206.0" styleClass="label-white" text="Question2:" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="answer1Field" layoutX="178.0" layoutY="145.0" prefHeight="26.0" prefWidth="373.0" promptText="Questions 1 Answer" style="-fx-background-radius: 10px;" />
+        <TextField fx:id="answer2Field" layoutX="178.0" layoutY="249.0" prefHeight="26.0" prefWidth="373.0" promptText="Question 2 Answer" style="-fx-background-radius: 10px;" />
+        <Button fx:id="submitButton" layoutX="276.0" layoutY="301.0" mnemonicParsing="false" onAction="#submit" prefHeight="42.0" prefWidth="122.0" text="Submit" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <ComboBox fx:id="question1Combo" layoutX="178.0" layoutY="95.0" prefHeight="26.0" prefWidth="373.0" />
+      <ComboBox fx:id="question2Combo" layoutX="180.0" layoutY="201.0" prefHeight="26.0" prefWidth="373.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.TutorialController">
+    <children>
+        <!-- Tutorial Label -->
+        <Label layoutX="20.0" layoutY="20.0" text="Welcome to the tutorial!"/>
+
+        <!-- Button 1 -->
+        <Button fx:id="btn1" text="Button 1" layoutX="100.0" layoutY="80.0" prefWidth="150.0"/>
+
+        <!-- Button 2 -->
+        <Button fx:id="btn2" text="Button 2" layoutX="100.0" layoutY="150.0" prefWidth="150.0"/>
+
+        <!-- Button 3 -->
+        <Button fx:id="btn3" text="Button 3" layoutX="100.0" layoutY="220.0" prefWidth="150.0"/>
+
+        <!-- Next Button -->
+        <Button fx:id="nextButton" text="Next" layoutX="350.0" layoutY="300.0" prefWidth="100.0"/>
+    </children>
+</AnchorPane>

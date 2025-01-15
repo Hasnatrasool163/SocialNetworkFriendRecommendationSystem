@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.PostController">
+    <top>
+        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Admin Post Management" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <TableView fx:id="postTable" prefHeight="400" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="colPostId" text="Post ID" />
+                <TableColumn fx:id="colUserId" prefWidth="87.0" text="User ID" />
+                <TableColumn fx:id="colContent" prefWidth="203.0" text="Content" />
+                <TableColumn fx:id="colTimestamp" prefWidth="144.0" text="Timestamp" />
+                <TableColumn fx:id="colLikes" prefWidth="85.0" text="Likes" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <Button fx:id="btnDelete" text="Delete Post" />
+            <Button fx:id="btnRefresh" text="Refresh" />
+        </HBox>
+    </bottom>
+</BorderPane>

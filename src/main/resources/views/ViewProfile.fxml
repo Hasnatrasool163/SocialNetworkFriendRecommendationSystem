@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane prefHeight="459.0" prefWidth="600.0" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.ViewProfileController">
+    <children>
+        <VBox alignment="CENTER" prefWidth="400.0" spacing="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+            <ImageView fx:id="profileImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Images/logo.png" />
+                </image>
+            </ImageView>
+
+            <HBox alignment="CENTER" spacing="10.0">
+                <Circle fx:id="statusCircle" fill="RED" radius="5.0" />
+                <Label fx:id="usernameLabel" style="-fx-font-size: 18px;" styleClass="label-white" text="Username" textFill="white" />
+            <Button fx:id="quickMessageButton" mnemonicParsing="false" text="Message" />
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="10.0">
+                <Label style="-fx-font-size: 14px;" styleClass="label-white" text="Total Friends:" textFill="lightgray" />
+                <Label fx:id="totalFriendsLabel" style="-fx-font-size: 14px;" styleClass="label-white" text="5" textFill="white" />
+            </HBox>
+
+            <VBox alignment="CENTER" spacing="5.0" style="-fx-background-color: #1d3557; -fx-background-radius: 10px; -fx-padding: 15;">
+            <children>
+               <Pane prefHeight="200.0" prefWidth="200.0">
+                  <children>
+                     <Label layoutX="96.0" layoutY="-3.0" styleClass="title" text="Basic Information" textFill="lightblue" />
+                     <Label layoutX="64.0" layoutY="41.0" style="-fx-font-size: 14px;" styleClass="label-white" text="Email:" textFill="white" />
+                     <Label fx:id="emailLabel" layoutX="169.0" layoutY="41.0" style="-fx-font-size: 14px;" styleClass="label-white" text="hasnatrasool163@gmail.com" textFill="white" />
+                     <Label fx:id="dobLabel" layoutX="168.0" layoutY="80.0" style="-fx-font-size: 14px;" styleClass="label-white" text="13/10/2006" textFill="white" />
+                     <Label fx:id="genderLabel" layoutX="170.0" layoutY="120.0" style="-fx-font-size: 14px;" styleClass="label-white" text="Male" textFill="white" />
+                     <Label fx:id="locationLabel" layoutX="168.0" layoutY="154.0" style="-fx-font-size: 14px;" styleClass="label-white" text="Punjab" textFill="white" />
+                     <Label layoutX="68.0" layoutY="80.0" style="-fx-font-size: 14px;" styleClass="label-white" text="DOB:" textFill="white" />
+                     <Label layoutX="50.0" layoutY="120.0" style="-fx-font-size: 14px;" styleClass="label-white" text="Gender:" textFill="white" />
+                     <Label layoutX="46.0" layoutY="154.0" style="-fx-font-size: 14px;" styleClass="label-white" text="Location" textFill="white" />
+                     <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" layoutX="8.0" layoutY="56.0" size="1.4EM" />
+                     <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" layoutX="9.0" layoutY="95.0" size="1.4EM" />
+                     <FontAwesomeIcon fill="WHITE" glyphName="MALE" layoutX="9.0" layoutY="135.0" size="1.4EM" />
+                     <FontAwesomeIcon fill="WHITE" glyphName="MAP_MARKER" layoutX="10.0" layoutY="169.0" size="1.4EM" />
+                  </children>
+               </Pane>
+            </children>
+            </VBox>
+
+            <HBox alignment="CENTER" spacing="15.0">
+                <Button style="-fx-background-color: #457b9d; -fx-text-fill: white; -fx-background-radius: 10px;" text="Close" />
+                <Button onAction="#logout" style="-fx-background-color: #e63946; -fx-text-fill: white; -fx-background-radius: 10px;" text="Logout" />
+            <Button layoutX="212.0" layoutY="10.0" onAction="#handleAddFriend" style="-fx-background-color: #457b9d; -fx-text-fill: white; -fx-background-radius: 10px;" text="Add Friend" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>

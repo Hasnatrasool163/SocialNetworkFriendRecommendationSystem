@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.dsassignment3_4.controllers.PostsController" prefWidth="800" prefHeight="600">
+    <ListView fx:id="postsListView" layoutX="10.0" layoutY="10.0" prefHeight="580.0" prefWidth="780.0" />
+</AnchorPane>

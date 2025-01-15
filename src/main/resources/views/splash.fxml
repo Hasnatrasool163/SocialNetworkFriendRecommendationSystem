@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-fill:#132431;"  xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.SplashScreenController">
+
+    <Rectangle  height="600.0" style="-fx-fill: linear-gradient(to bottom, #3a6073, #16222a);" width="800.0" />
+
+    <Group fx:id="networkGroup">
+    </Group>
+    <Label fx:id="titleLabel" layoutX="289.0" layoutY="500.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" styleClass="title-label" text="FriendzClub" textFill="WHITE">
+        <font>
+            <Font size="40.0" />
+        </font>
+    </Label>
+    <Button fx:id="letsGoButton" disable="true" layoutX="300.0" layoutY="558.0" mnemonicParsing="false" onAction="#switchToRegisterScene" prefHeight="32.0" prefWidth="201.0" stylesheets="@../css/GlobalStyles.css" text="Let's Get Started!" textFill="WHITE">
+        <font>
+            <Font size="17.0" />
+        </font>
+        <tooltip>
+            <Tooltip text="Wait for few seconds!" />
+        </tooltip>
+    </Button>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="664.0" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.RecommendedUsersController">
+    <children>
+        <Label layoutX="206.0" layoutY="20.0" styleClass="title" text="Recommended Users" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+         <tooltip>
+            <Tooltip text="0.5 Medium , 0.7 High else Low" />
+         </tooltip>
+        </Label>
+
+        <ListView fx:id="recommendedUsersListView" layoutX="24.0" layoutY="80.0" prefHeight="350.0" prefWidth="616.0">
+            <items>
+            </items>
+        </ListView>
+
+    </children>
+</AnchorPane>

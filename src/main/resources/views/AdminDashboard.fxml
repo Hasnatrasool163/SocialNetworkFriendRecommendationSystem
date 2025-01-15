@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="481.0" prefWidth="644.0" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.AdminController">
+   <children>
+      <Button fx:id="usersButton" layoutX="90.0" layoutY="289.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="181.0" text="Manage Users" textFill="#110d0d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="139.0" layoutY="19.0" styleClass="title" text="Welcome To Admin Dashboard" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="connectionsButton" layoutX="357.0" layoutY="289.0" mnemonicParsing="false" text="Manage Connections" textFill="#110d0d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="postsButton" layoutX="357.0" layoutY="357.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="156.0" text="Manage Posts" textFill="#110d0d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="131.0" fitWidth="200.0" layoutX="240.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" styleClass="logo">
+         <image>
+            <Image url="@../Images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="54.0" minHeight="5.0" prefHeight="5.0" prefWidth="395.0" style="-fx-background-color: white;" textFill="WHITE" />
+      <Button fx:id="logoutButton" layoutX="239.0" layoutY="426.0" minHeight="32.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="163.0" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Logout" textFill="#110d0d">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backButton" layoutX="109.0" layoutY="359.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="156.0" text="Back To Login" textFill="#110d0d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="visualizeButton" layoutX="223.0" layoutY="232.0" mnemonicParsing="false" text="VisualizeConnections" />
+   </children>
+</AnchorPane>

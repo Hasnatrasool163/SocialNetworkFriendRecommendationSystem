@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="org.example.dsassignment3_4.controllers.SelectAvatarController">
+    <VBox alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+        <Label style="-fx-font-size: 16px;" text="Select Your Avatar" />
+        <HBox fx:id="avatarContainer" alignment="CENTER" spacing="10" />
+        <Button onAction="#updateAvatar" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Update Avatar" />
+      <Label text="Avatars From flaticon.com(Rounded-Icons)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+    </VBox>
+</AnchorPane>

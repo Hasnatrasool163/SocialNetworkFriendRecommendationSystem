@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.Integer?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.CreatePostController">
+    <Label alignment="CENTER" prefHeight="29.0" prefWidth="553.0" style="-fx-font-size: 20; -fx-font-weight: bold;" styleClass="label-white" text="Create a New Post" textAlignment="CENTER" textFill="WHITE" />
+
+    <HBox alignment="CENTER" prefHeight="44.0" prefWidth="547.0" spacing="10">
+        <Label text="Font:" />
+        <ComboBox fx:id="fontComboBox" prefWidth="150">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Arial" />
+                    <String fx:value="Verdana" />
+                    <String fx:value="Tahoma" />
+                    <String fx:value="Times New Roman" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Label text="Size:" />
+        <ComboBox fx:id="fontSizeComboBox" prefHeight="26.0" prefWidth="73.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <Integer fx:value="12" />
+                    <Integer fx:value="14" />
+                    <Integer fx:value="16" />
+                    <Integer fx:value="18" />
+                    <Integer fx:value="20" />
+                    <Integer fx:value="24" />
+                    <Integer fx:value="30" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label prefHeight="22.0" prefWidth="95.0" text="Text Color:" />
+        <ColorPicker fx:id="textColorPicker" />
+        <Button fx:id="boldButton" style="-fx-font-weight: bold;" text="B" />
+    </HBox>
+
+    <TextArea fx:id="postTextArea" prefHeight="150" promptText="Write your post here..." style="-fx-font-size: 14px; -fx-font-family: Arial;" wrapText="true" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-spacing: 20;">
+      <children>
+      
+          <Button fx:id="postButton" onAction="#handlePostAction" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Post">
+            <graphic>
+               <FontAwesomeIcon glyphName="SEND" />
+            </graphic></Button>
+         <Button fx:id="clearButton" onAction="#clear" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;" text="Clear">
+            <graphic>
+               <FontAwesomeIcon fill="#ff0909" glyphName="REMOVE" />
+            </graphic></Button>
+      </children>
+   </HBox>
+</VBox>

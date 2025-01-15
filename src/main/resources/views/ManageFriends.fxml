@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="660.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.ManageFriendsController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="660.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to bottom, #3a6073, #16222a);">
+            <children>
+                <Label layoutX="96.0" layoutY="77.0" text="User(1) ID:" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="97.0" layoutY="165.0" text="User(2) ID:" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="97.0" layoutY="266.0" text="User(1) UserName:" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="99.0" layoutY="371.0" text="User(2) UserName:" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="464.0" text="Status:" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="statusComboBox" layoutX="100.0" layoutY="504.0" prefHeight="44.0" prefWidth="168.0" />
+                <Label layoutX="23.0" layoutY="110.0">
+                    <graphic>
+                        <FontAwesomeIcon glyphName="USER" size="3em" />
+                    </graphic>
+                </Label>
+                <Label layoutX="32.0" layoutY="202.0" />
+                <Label layoutX="23.0" layoutY="324.0" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/address-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Label>
+                <Button layoutX="19.0" layoutY="573.0" mnemonicParsing="false" onAction="#addFriendRecord" prefHeight="42.0" prefWidth="72.0" style="-fx-background-color: SKyBlue; -fx-background-radius: 20px;" text="Add" textFill="#132431">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button layoutX="104.0" layoutY="573.0" mnemonicParsing="false" onAction="#handleUpdate" style="-fx-background-color: SKyBlue; -fx-background-radius: 20px;" text="Update" textFill="#132431">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button layoutX="206.0" layoutY="573.0" mnemonicParsing="false" onAction="#deleteFriendRecord" style="-fx-background-color: SKyBlue; -fx-background-radius: 20px;" text="Delete" textFill="#132431">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button layoutX="114.0" layoutY="620.0" mnemonicParsing="false" onAction="#clear" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: SKyBlue; -fx-background-radius: 20px;" text="Clear" textFill="#132431">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <Label layoutX="20.0" layoutY="416.0" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/address-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="23.0" layoutY="515.0" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="71.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/arrows.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+                  <FontAwesomeIcon glyphName="USER" layoutX="24.0" layoutY="251.0" size="3em" text="" />
+            <ComboBox fx:id="user1ComboBox" layoutX="93.0" layoutY="114.0" prefHeight="44.0" prefWidth="177.0" promptText="Choose User(1) ID:" />
+            <ComboBox fx:id="user2ComboBox" layoutX="93.0" layoutY="215.0" prefHeight="44.0" prefWidth="174.0" promptText="Choose User(2) ID:" />
+            <TextField fx:id="usernameField" editable="false" layoutX="96.0" layoutY="317.0" />
+            <TextField fx:id="username2Field" editable="false" layoutX="96.0" layoutY="416.0" />
+            <Label fx:id="statusLabel" layoutX="42.0" layoutY="36.0" prefHeight="18.0" prefWidth="233.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            </children>
+        </Pane>
+        <Label layoutX="564.0" layoutY="85.0" text="Manage Friends" textFill="#132431">
+            <graphic>
+                <FontAwesomeIcon glyphName="USERS" size="3em" />
+            </graphic>
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="489.0" layoutY="163.0" maxHeight="5.0" minHeight="5.0" prefHeight="5.0" prefWidth="340.0" style="-fx-background-color: #132431;" text="Label" />
+        <TableView fx:id="friendsTable" layoutX="349.0" layoutY="253.0" prefHeight="342.0" prefWidth="609.0" stylesheets="@../css/GlobalStyles.css">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="67.0" text="ID" />
+                <TableColumn fx:id="usernameColumn" prefWidth="183.0" text="UserName" />
+                <TableColumn fx:id="usernameColumn2" prefWidth="187.0" text="UserName" />
+                <TableColumn fx:id="statusColumn" prefWidth="170.0" style="-fx-header-color: white; -fx-title-color: white;" text="Status" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #3a6073, #16222a);" stylesheets="@../css/GlobalStyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.MutualFriendsController">
+    <children>
+
+        <Label layoutX="57.0" layoutY="93.0" styleClass="label-white" text="Username:" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Label fx:id="userNameLabel" layoutX="161.0" layoutY="93.0" styleClass="label-white" text="Muhammad Hasnat Rasool" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="201.0" layoutY="34.0" styleClass="title" text="Mutual Friends" textFill="WHITE">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+
+        <ListView fx:id="mutualFriendsListView" layoutX="50.0" layoutY="140.0" prefHeight="224.0" prefWidth="500.0">
+            <items>
+            </items>
+        </ListView>
+
+        <Button fx:id="viewMutualFriendsButton" layoutX="200.0" layoutY="380.0" mnemonicParsing="false" onAction="#viewMutualFriends" style="-fx-background-color: #2980B9;" text="View Mutual Friends of Selected Friend" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+      <Button fx:id="backButton" layoutX="84.0" layoutY="380.0" mnemonicParsing="false" onAction="#initialize" text="Back" />
+
+    </children>
+</AnchorPane>

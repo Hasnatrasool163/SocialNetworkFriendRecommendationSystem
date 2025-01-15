@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.WorldMapView?>
+
+
+<WorldMapView fx:id="worldMapView" countrySelectionMode="SINGLE" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.WorldMapViewController" />

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="250.0" prefWidth="325.0" style="-fx-background-color: white; -fx-border-radius: 10px; -fx-border-color: #ddd; -fx-padding: 10;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dsassignment3_4.controllers.NotificationDialogController">
+    <children>
+        <Label fx:id="notificationTitle" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Notifications" />
+        <VBox fx:id="notificationBox" style="-fx-padding: 10px;">
+            <!-- Notifications will be dynamically added here -->
+        </VBox>
+      <HBox prefHeight="55.0" prefWidth="278.0" style="-fx-padding: 20px; -fx-spacing: 20px;">
+         <children>
+              <Button onAction="#closeNotification" prefHeight="42.0" prefWidth="87.0" stylesheets="@../css/GlobalStyles.css" text="Close" />
+            <Button fx:id="readButton" mnemonicParsing="false" onAction="#handleMarkAsReadButton" prefHeight="42.0" prefWidth="148.0" stylesheets="@../css/GlobalStyles.css" text="Mark As Read" />
+         </children>
+      </HBox>
+    </children>
+</VBox>
